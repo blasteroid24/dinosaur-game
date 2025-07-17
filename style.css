@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to top, #fdd9a0, #f7f7f7);
+    overflow: hidden;
+}
+
+.game {
+    position: relative;
+    width: 800px;
+    height: 200px;
+    border: 4px solid #222;
+    border-radius: 12px;
+    background: linear-gradient(to top, #e0f7fa, #ffffff);
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+#dino {
+    position: absolute;
+    bottom: 0;
+    left: 50px;
+    width: 50px;
+    height: 50px;
+    z-index: 2;
+}
+
+#dino img {
+    width: 100%;
+    height: auto;
+    filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.4));
+}
+
+#cactus {
+    position: absolute;
+    bottom: 0;
+    right: -20px;
+    width: 30px;
+    height: 50px;
+    background: linear-gradient(to top, #2e7d32, #66bb6a);
+    border-radius: 5px;
+    box-shadow: 0 0 5px #388e3c inset;
+    animation: moveCactus 2s linear infinite;
+    z-index: 1;
+}
+
+@keyframes moveCactus {
+    from {
+        right: -30px;
+    }
+
+    to {
+        right: 820px;
+    }
+}
+
+.jump {
+    animation: jump 0.5s ease;
+}
+
+@keyframes jump {
+    0% {
+        bottom: 0;
+    }
+
+    50% {
+        bottom: 100px;
+    }
+
+    100% {
+        bottom: 0;
+    }
+}
+
+#score {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    padding: 8px 14px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 8px;
+    color: #333;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    font-family: 'Courier New', Courier, monospace;
+}
