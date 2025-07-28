@@ -3,7 +3,7 @@
 Just made this game for fun!  
 Recreated the classic Chrome Dinosaur game using **JavaScript**, **HTML**, and **CSS**.
 
-![Dinosaur Game](.public/Screenshot%202025-07-28%20103705.png)
+![Dinosaur Game](.public/1.png)
 
 ## Features
 - Jump over cacti just like in the original game 🏃‍♂️🌵
